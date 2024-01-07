@@ -14,7 +14,7 @@ hero:
 ########################### About ##################################
 about:
   enable: true
-  image: 'images/profilLouis.jpg'
+  image: 'images/profilLouis2.png'
   title: 'A PROPOS DE MOI'
   content: Louis DUTOMBOIS, 19 ans, je suis étudiant à l'IUT de Lens, en BUT Informatique ainsi qu'un apprenti développeur Web. Durant ma formation, j'ai pu toucher et découvrir différents domaines comme la programmation, le développement web, les bases de données. Si vous souhaitez me contacter, vous le pouvez en passant par [LinkedIn, Github, ou par email](#contact)!
 
@@ -94,24 +94,24 @@ portfolio:
     - name: Roca
       image: 'images/portfolio/Roca.jpeg'
       url: https://github.com/Mizorami/Roca
-      description: Roca est un site de lecture et de création d'histoire à choix. Ce projet a été réalisé lors du marathon Web en colaboration avec un autre pôle de mon IUT qui est le pôle MMI. Le site utilise Laravel, HTML/CSS, SQL et PHP. Le site permet de lire une histoire mais aussi de crée une histoire soit même et de la publier.
+      description: Roca est un site de lecture et de création d'histoire à choix. Ce projet a été réalisé lors du marathon Web en collaboration avec un autre pôle de mon IUT qui est le pôle MMI. Le site utilise Laravel, HTML/CSS, SQL et PHP. Le site permet de lire une histoire, mais aussi crée une histoire soit même et de la publier.
 
     - name: FlatCraft
       image: 'images/portfolio/flatcraft1.png'
       url: https://github.com/Mizorami/flatcraft
-      description: "Ce projet a été réalisé dans le cadre du cours de QDev (Qualité de développement). Le but est de créer un jeu inspiré de 'Minecraft', tout cela en 2D. Il y a les trois dimensions de Minecraft, un inventaire, des blocs à miner et à utiliser pour différents crafts, ainsi que différents biomes et structures de terrain. Le projet a été réalisé en Java, et l'affichage se fait en JavaFX.. L'implantation de patrons de conception était centrale : fabriques abstraites, états.."
+      description: "Ce projet a été réalisé dans le cadre du cursus QDev (Qualité en Développement). Notre objectif était de créer un jeu 2D inspiré de Minecraft. Minecraft dont ces trois dimensions,l'inventaire, les blocs à extraire et a utiliser pour différentes fabrications, ainsi que différents biomes et structures de terrain. Le projet est réalisé en Java, l'affichage se fait avec JavaFX, et l'implémentation des patron de conception est le coeur du projet."
 
     - name: Pokedex
       image: 'images/portfolio/pokedex2.png'
       url: https://github.com/Mizorami/pokedex
-      description: "Ce projet a été réalisé dans le cadre du cours de MSI (Management des systèmes d'information). Le but était de créer un projet, en respectant les différentes étapes de développement et de gestion de projet : dailys, sprints, comptes rendus, issues, issue boards... Le projet a été réalisé en Python / Flask, afin de gérer facilement les pages web. Nous avons également utilisé une base de données sqlite pour stocker les Pokémons attrapés, ainsi que différents outils front : Bulma, Bootstrap et Figma."
+      description: "Ce projet a été réalisé dans le cadre du cours de MSI (Management des systèmes d'information). Le but était de créer un pokedex qui permet de rechercher un pokemon afin de connaître les principaux détails attendus par le client. Ce projet était une mise en situation de ce qu'il peut se passer en entreprise avec les moments de rush et la collaboration en équipe."
 
     - name: Raytracer
       image: 'images/portfolio/raytracing2.png'
       url: https://github.com/Mizorami/Raytracer
-      description: "Ce projet a été réalisé dans le cadre de la SAE S3.A.01. Le but était de créer une librairie générant des images avec raytracing. D'abord, il y a lecture d'un fichier descriptif de la scène, en suite, l'image est générée en utilisant différentes méthodes et classes. Enfin, l'image est créée et disponible au téléchargement. Le calcul des pixels se fait par calculs de vecteurs et de points, en prenant en compte la caméra, les lumières et les différentes formes. Le projet a été réalisé en Java. L'implémentation de patrons de conception était centrale : états, singletons, décorateurs, builders.. Le fichier de description possède sa propre synthaxe, celui-ci est lu par un Scanner, puis les informations sont retranscrites pour créer l'image."
+      description: "Ce projet a été réalisé dans le cadre de la SAE S3.A.01. Le but était de créer une librairie générant des images avec raytracing. Dans un premier temps l'application va lire un fichier donné puis, l'image est générée en utilisant différentes méthodes et classes. Pour finir l'image est télécharger. Le projet a été réalisé en Java. L'implémentation de patrons de conception est le coeur du projet."
 
     - name: Toys Market
       image: 'images/portfolio/jeuInfo.png'
       url: https://github.com/Mizorami/InfoJeux/tree/develop
-      description: "Ce projet a été réalisé dans le cadre du cours de MSI (Management des systèmes d'information)."
+      description: "Ce projet a été réalisé dans le cadre du cours de MSI (Management des systèmes d'information). Le but de ce projet est d'afficher les différents et leur description provenant d'une API. On pourra alors aussi modifier, supprimer ou encore crée un nouveau jeu."

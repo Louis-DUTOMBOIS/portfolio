@@ -3,6 +3,49 @@ baseURL = "https://example.com"
 title = "Louis DUTOMBOIS"
 theme = "port-hugo"
 
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    baseURL = 'https://example.org/'
+    contentDir = 'data/en'
+    languageName = 'English'
+    # main menu
+    [[menu.main]]
+    name = "Home"
+    URL = "#en"
+    weight = 1
+
+    [[menu.main]]
+    name = "About me"
+    URL = "#about"
+    weight = 2
+
+    [[menu.main]]
+    name = "Portfolio"
+    URL = "#portfolio"
+    weight = 3
+
+[languages.fr]
+    baseURL = 'https://example.fr'
+    contentDir = 'data/en'
+    languageName = 'Français'
+    # main menu
+    [[menu.main]]
+    name = "Home"
+    URL = "#fr"
+    weight = 1
+
+    [[menu.main]]
+    name = "About me"
+    URL = "#about"
+    weight = 2
+
+    [[menu.main]]
+    name = "Portfolio"
+    URL = "#portfolio"
+    weight = 3
+
 ############################# Plugins ##############################
 
 # CSS Plugins
@@ -32,21 +75,6 @@ link = "plugins/hugrid/hugrid.min.js"
 
 ############################## navigation ###############################
 
-# main menu
-[[menu.main]]
-name = "Home"
-URL = "#home"
-weight = 1
-
-[[menu.main]]
-name = "About me"
-URL = "#about"
-weight = 2
-
-[[menu.main]]
-name = "Portfolio"
-URL = "#portfolio"
-weight = 3
 
 
 #################### default parameters ################################
@@ -80,6 +108,8 @@ link = "https://www.linkedin.com/in/louis-dutombois/"
 icon = "fas fa-envelope"
 link = "mailto:louis.dutombois@gmail.com"
 
-contentDir = "content/english"
-weight = 1
-home = "Home"
+[[params.social]]
+icon = "fa fa-file-pdf"
+link = "https://github.com/Mizorami/CV/blob/main/DUTOMBOIS%20Louis.pdf"
+
+
