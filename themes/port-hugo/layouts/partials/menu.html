@@ -1,0 +1,138 @@
+<section class="menu menu-fix" id="menu">
+  <nav>
+    <!-- desktop-menu -->
+    <div class="menu-container">
+      <div class="desktop-menu-logo">
+        <a href="{{ .Site.BaseURL | relLangURL }}"
+          ><img
+            class="img-fluid"
+            src="{{ .Site.Params.logo_light | relURL }}"
+            alt="{{ .Site.Title }}"
+            id="desktop-logo"
+        /></a>
+      </div>
+      <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
+        {{ range .Site.Menus.main }}
+        <li class="menu-item hvr-underline-from-left {{ .Weight }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      <!-- mobile-menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-nav">
+          <a class="menu-link">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="mobile-menu-logo">
+          <a href="{{ .Site.BaseURL | relLangURL }}"
+            ><img
+              class="img-fluid"
+              src="{{ .Site.Params.logo_dark | relURL }}"
+              alt="{{ .Site.Title }}"
+          /></a>
+        </div>
+        <div class="menu-slider">
+          <nav>
+            <ul class="mobile-menu-list">
+              {{ range .Site.Menus.main }}
+              <li class="mobile-menu-item 1 mx-auto">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+            <ul class="mobile-menu-icons list-inline mx-auto">
+              {{ range .Site.Params.social }}
+              <li>
+                <a href="{{ .link | safeURL }}"
+                  ><i class="fab {{ .icon }} fa-2x"></i
+                ></a>
+              </li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .dropbtn {
+      background-color: white;
+      color: black;
+      border-radius: 10%;
+      border: none;
+     }
+    
+     .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 1em 0 0 0;
+     }
+     
+     /* Dropdown Content (Hidden by Default) */
+     .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+     }
+     
+     /* Links inside the dropdown */
+     .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+     }
+     
+     /* Change color of dropdown links on hover */
+     .dropdown-content a:hover {
+      background-color: #ddd;
+     }
+     
+     /* Show the dropdown menu on hover */
+     .dropdown:hover .dropdown-content {
+      display: block;
+     }
+     
+     /* Change the background color of the dropdown button when the dropdown content is shown */
+     .dropdown:hover .dropbtn {
+      background-color: #037215;
+     }
+
+     .header__languages{
+      margin-left: 90%;
+     }
+  </style>
+  <div class="header__languages languages">
+    {{ if .Site.IsMultiLingual }}
+      <nav>
+        <div class="dropdown">
+          {{ range .Site.Languages }}
+            {{ if eq . $.Site.Language }}
+              <button class="dropbtn">
+                {{ .LanguageName }}
+                <a href="/ru/"></a>
+              </button>
+            {{ end }}
+          {{ end }}
+
+
+          <div class="dropdown-content">
+            {{ range $.Translations }}
+              <a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}"
+                >{{ .Language.LanguageName }}</a
+              >
+            {{ end }}
+          </div>
+        </div>
+      </nav>
+    {{ end }}
+  </div>
+
+</section>
